@@ -1,0 +1,6 @@
+# Normalize line endings. Shell scripts and YAML MUST stay LF or they break when run /
+# parsed on Unix (a CRLF shebang yields `bad interpreter: …^M`). See scripts/ and .github/.
+* text=auto
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
